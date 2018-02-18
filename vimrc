@@ -21,6 +21,9 @@ call plug#begin('~/.vim/plugged')
 	Plug 'elzr/vim-json'
 	Plug 'klen/python-mode'
 	Plug 'scrooloose/nerdtree'
+	Plug 'tpope/vim-surround'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Let me delete non empty directories
@@ -35,16 +38,28 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+:let g:syntastic_loc_list_height=2
 
 " Colours & Stylez
 colorscheme atom
 highlight LineNr ctermfg=grey
 set numberwidth=5
+set laststatus=2
+let g:airline_theme='light'
 
 " NerdTree
 let NERDTreeShowHidden=1
+
+" Python Mode
+let g:pymode_folding = 0
 
 " Mappingz
 map <C-n> :NERDTreeToggle<CR>
 
 " Language Helpers
+
+" Clipboard faff for OSX
+set clipboard=unnamed
+
+
+
