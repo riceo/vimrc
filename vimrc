@@ -61,5 +61,6 @@ map <C-n> :NERDTreeToggle<CR>
 " Clipboard faff for OSX
 set clipboard=unnamed
 
-
+# Markdown
+let g:vim_markdown_folding_disabled = 1
 
