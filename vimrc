@@ -24,6 +24,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-surround'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+    Plug 'fatih/vim-hclfmt'
 call plug#end()
 
 " Let me delete non empty directories
@@ -46,6 +47,10 @@ highlight LineNr ctermfg=grey
 set numberwidth=5
 set laststatus=2
 let g:airline_theme='light'
+set number
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " NerdTree
 let NERDTreeShowHidden=1
@@ -57,10 +62,30 @@ let g:pymode_folding = 0
 map <C-n> :NERDTreeToggle<CR>
 
 " Language Helpers
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 " Clipboard faff for OSX
 set clipboard=unnamed
 
-# Markdown
+" Markdown
 let g:vim_markdown_folding_disabled = 1
 
+" NeoVim colours
+" Set neovim embedded terminal colors
+let g:terminal_color_0 = '#2e3436'
+let g:terminal_color_1 = '#cc0000'
+let g:terminal_color_2 = '#4e9a06'
+let g:terminal_color_3 = '#c4a000'
+let g:terminal_color_4 = '#3465a4'
+let g:terminal_color_5 = '#75507b'
+let g:terminal_color_6 = '#0b939b'
+let g:terminal_color_7 = '#d3d7cf'
+let g:terminal_color_8 = '#555753'
+let g:terminal_color_9 = '#ef2929'
+let g:terminal_color_10 = '#8ae234'
+let g:terminal_color_11 = '#fce94f'
+let g:terminal_color_12 = '#729fcf'
+let g:terminal_color_13 = '#ad7fa8'
+let g:terminal_color_14 = '#00f5e9'
+let g:terminal_color_15 = '#eeeeec'
