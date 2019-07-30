@@ -25,6 +25,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
     Plug 'fatih/vim-hclfmt'
+    Plug 'nvie/vim-flake8'
 call plug#end()
 
 " Let me delete non empty directories
@@ -89,3 +90,7 @@ let g:terminal_color_12 = '#729fcf'
 let g:terminal_color_13 = '#ad7fa8'
 let g:terminal_color_14 = '#00f5e9'
 let g:terminal_color_15 = '#eeeeec'
+
+" NerdTree ignore fluff
+set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
+let NERDTreeRespectWildIgnore=1
