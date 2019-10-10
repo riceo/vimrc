@@ -1,1 +1,0 @@
-/Users/riceo/.vim
